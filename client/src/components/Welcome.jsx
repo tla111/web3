@@ -7,6 +7,12 @@ import { Loader } from './';
 
 const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
+const Input = ({ placeholder }) => (
+    <input
+        placeholder={placeholder}
+    />
+);
+
 const Welcome = () => {
     const connectWallet = () => {
 
@@ -72,6 +78,11 @@ const Welcome = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
+                        <Input placeholder="Address To" name="addressTo" type="text" handleChange={() => { }} />
+                    </div>
+
                 </div>
 
             </div>
